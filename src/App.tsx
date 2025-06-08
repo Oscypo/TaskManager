@@ -25,6 +25,9 @@ function App() {
 			<TasksDisplay
 				tasks={tasks}
 				onComplete={(task: Task) => handleComplete(task)}
+				onDelete={(tasktoDelete: Task) =>
+					setTasks(tasks.filter((task) => task.title !== tasktoDelete.title))
+				}
 			></TasksDisplay>
 		</>
 	);
