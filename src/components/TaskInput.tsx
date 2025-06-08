@@ -11,9 +11,15 @@ function TaskInput({ onAddTask }: Props) {
 		task != "" && onAddTask(task);
 	}
 	return (
-		<form className="task-input" onSubmit={(e) => handleSubmit(e)}>
-			<h1>Add A Task</h1>
+		<form
+			className="bg-white p-8 rounded-lg shadow-lg "
+			onSubmit={(e) => handleSubmit(e)}
+		>
+			<h1 className="text-3xl font-bold text-gray-800 text-center">
+				Task Manager
+			</h1>
 			<input
+				className="border-2 border-gray-300 p-2 rounded-lg w-full mt-4"
 				type="text"
 				value={task}
 				placeholder="Add task"

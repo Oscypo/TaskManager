@@ -1,40 +1,4 @@
-/* .task-input {
-	height: 90vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.task-input h1 {
-	font-size: 8em;
-}
-.task-input input {
-	font-size: 3em;
-	padding: 1vh;
-	border-radius: 15px;
-	border: none;
-	margin-top: 2vh;
-}
-body {
-	height: 150vh;
-	margin: 0;
-	background-image: url(./public/tokyo.jpg);
-	background-size: cover;
-	background-position: center;
-}
-.task-list {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	justify-content: center;
-	align-items: center;
-}
-.task-list li {
-	background-color: white;
-	padding: 3vh;
-	border-radius: 15px;
-	display: block;
-	width: 28vw;
-	margin: 0.5vh;
-	font-size: 1.2em;
-	text-align: center;
-} */
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
